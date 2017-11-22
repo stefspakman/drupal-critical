@@ -1,0 +1,13 @@
+{
+  "base": "http://www.google.nl",
+  "pages": [
+    {
+      "url": "/",
+      "name": "home"
+    },
+    {
+      "url": "/services",
+      "name": "services"
+    }
+  ]
+}
