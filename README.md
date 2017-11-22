@@ -2,6 +2,8 @@
 
 Automated generation of Critical CSS for Drupal sites. 
 
+*Note* Drupal module will be released shortly, in the meantime you can use this by manually configuring which pages to proces (see example below)
+
 ![](https://i.imgur.com/gaXnp02.png)
 
 ## Install
@@ -56,6 +58,22 @@ var pages = require('./critical.json');
 critical.generate(settings, pages);
 ```
 
+Critical.json
+```json
+{
+  "base": "http://www.google.nl",
+  "pages": [
+    {
+      "url": "/",
+      "name": "home"
+    },
+    {
+      "url": "/services",
+      "name": "services"
+    }
+  ]
+}
+```
 
 ### Options
 *note:* Not all [critical](https://www.npmjs.com/package/critical) options are available, the list below includes all options
