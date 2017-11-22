@@ -1,4 +1,4 @@
-# critical [![NPM version][npm-image]][npm-url] [![dependencies Status][depstat-image]][depstat-url] [![devDependencies Status Status][devdepstat-image]][devdepstat-url]
+# Drupal Critical [![NPM version][npm-image]][npm-url] [![dependencies Status][depstat-image]][depstat-url] [![devDependencies Status Status][devdepstat-image]][devdepstat-url]
 
 Automated generation of Critical CSS for Drupal sites. 
 
