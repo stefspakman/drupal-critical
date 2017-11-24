@@ -1,13 +1,13 @@
 {
-  "base": "http://www.google.nl",
+  "base": "http://www.example.com",
   "pages": [
     {
-      "url": "/",
-      "name": "home"
+      "path": "/",
+      "filename": "critical-home.css"
     },
     {
-      "url": "/services",
-      "name": "services"
+      "path": "/demopage",
+      "filename": "critical-demopage.css"
     }
   ]
 }

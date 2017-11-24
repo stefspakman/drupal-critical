@@ -1,7 +1,7 @@
 var critical = require('../index.js');
 
 var settings = {
-  local: true, //exernal
+  local: false, //exernal
   dest: 'dest/',
   minify: true,
   extract: true,
@@ -35,19 +35,21 @@ var settings = {
   }]
 };
 
-// var pages = {
-//     base: 'http://google.com',
-//     pages: [
-//       {
-//         url: '/',
-//         name: 'home',
-//       },
-//       {
-//         url: '/services',
-//         name: 'Services',
-//       }
-//     ]
-//   };
-var pages = require('./critical.json');
 
+var pages = require('./critical.json');
+critical.generate(settings, pages);
+
+var pages = {
+  base: 'http://example.com',
+  pages: [
+    {
+      path: '/',
+      filename: 'home'
+    },
+    {
+      path: '/demopage',
+      filename: 'Demopage'
+    }
+  ]
+};
 critical.generate(settings, pages);

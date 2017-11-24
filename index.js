@@ -5,8 +5,11 @@ var criticalcss = require('critical'),
     chalk = require('chalk');
 
 exports.generate = function(settings, pages) {
+  if (pages.pages[0].path === undefined || pages.pages[0].filename === undefined){
+    log.error(chalk.red('Attention: This module has been updated, please update the keys inside your pages object'))
+  }
   var port = 3011;
-  if (settings.local){
+  if (settings.local) {
     log.info('Using local url');
 
     bs.init({
@@ -95,9 +98,13 @@ function mergeSettings(baseUrl, page, base) {
     "ignoreOptions",
     "penthouse"
   ];
+  var dest = base.dest + page.filename;
+  if ( (page.filename).endsWith(".css")){
+    dest = base.dest + 'critical-' + (page.filename).toLowerCase() + '.css'
+  }
   var pageSettings = {
-    src: baseUrl + page.url,
-    dest: base.dest + 'critical-' + (page.name).toLowerCase() + '.css'
+    src: baseUrl + page.path,
+    dest: dest
   };
   var base = _.pick(base, keys);
   base['inline'] = false

@@ -61,15 +61,15 @@ critical.generate(settings, pages);
 Critical.json
 ```json
 {
-  "base": "http://www.google.nl",
+  "base": "http://www.example.com",
   "pages": [
     {
-      "url": "/",
-      "name": "home"
+      "path": "/",
+      "filename": "critical-home.css"
     },
     {
-      "url": "/services",
-      "name": "services"
+      "path": "/demo",
+      "filename": "critical-demo.css"
     }
   ]
 }
@@ -98,7 +98,10 @@ Critical.json
 | ignoreOptions    | `object`           | `{}` | Ignore options. See [`filter-css#options`](https://github.com/bezoerb/filter-css#options).
 | penthouse        | `object`           | `{}` | Configuration options for [`penthouse`](https://github.com/pocketjoso/penthouse).
 
-
+## Changelog
+ **v1.1.0 - 2017-11-24** 
+ * renamed _url_ to _path_
+ * changed fixed filenaming to variable
 
 
 [npm-url]: https://www.npmjs.com/package/drupalcritical
