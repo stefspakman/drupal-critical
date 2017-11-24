@@ -1,4 +1,4 @@
-# Drupal Critical [![NPM version][npm-image]][npm-url] [![dependencies Status][depstat-image]][depstat-url] [![devDependencies Status Status][devdepstat-image]][devdepstat-url]
+# Drupal Critical [![NPM version][npm-image]][npm-url]
 
 Automated generation of Critical CSS for Drupal sites. 
 
@@ -9,7 +9,7 @@ Automated generation of Critical CSS for Drupal sites.
 ## Install
 
 ```
-$ npm install --save critical
+$ npm install --save drupalcritical
 ```
 
 ## Usage
@@ -106,10 +106,3 @@ Critical.json
 
 [npm-url]: https://www.npmjs.com/package/drupalcritical
 [npm-image]: https://img.shields.io/npm/v/drupalcritical.svg
-
-
-[depstat-url]: https://david-dm.org/addyosmani/critical
-[depstat-image]: https://david-dm.org/addyosmani/critical/status.svg
-
-[devdepstat-url]: https://david-dm.org/addyosmani/critical?type=dev
-[devdepstat-image]: https://david-dm.org/addyosmani/critical/dev-status.svg
