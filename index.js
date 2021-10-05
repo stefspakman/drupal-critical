@@ -99,9 +99,9 @@ function mergeSettings(baseUrl, page, base) {
     "penthouse"
   ];
   var dest = base.dest + page.filename;
-  if ( (page.filename).endsWith(".css")){
-    dest = base.dest + 'critical-' + (page.filename).toLowerCase() + '.css'
-  }
+//  if ( (page.filename).endsWith(".css")){
+//    dest = base.dest + 'critical-' + (page.filename).toLowerCase() + '.css'
+//  }
   var pageSettings = {
     src: baseUrl + page.path,
     dest: dest
